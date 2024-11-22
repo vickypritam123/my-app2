@@ -1,0 +1,64 @@
+.parent{
+
+    width: 100%;
+    height: 100%;
+    background-color: brown;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.child{
+
+
+    background-color: black;
+    position: relative;
+
+}
+img{
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+}
+
+img:hover{
+    
+}
+
+/* .author{
+    color: white;
+    display: none;
+} */
+
+h6{
+    color: white;
+    position: relative;
+    top: -120px;
+    left: 20px;
+
+    
+    display: none;
+
+}
+
+.btn{
+
+    position: absolute;
+    top: 120px;
+    left: 50px;
+    display: none;
+    
+}
+
+img:hover~.author{
+    display: block;
+}
+
+img:hover~.btn{
+    display: block;
+}
+
+
+
+
+
+

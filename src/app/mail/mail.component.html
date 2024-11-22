@@ -1,0 +1,18 @@
+<div>
+    <div class="parent">
+        <div class="child" *ngFor="let mail of mails" [ngClass]="{
+            'thick':mail.completed==true,'light':mail.completed==false
+        }">
+           
+
+            <label class="id" for="">{{mail.id}}</label>
+
+            <label class="title" for="">{{mail.title}}</label>
+
+        
+
+        </div>
+
+    </div>
+
+</div>

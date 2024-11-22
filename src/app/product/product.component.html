@@ -1,0 +1,17 @@
+<div>
+    <div class="parent">
+        <div class="child card" *ngFor="let product of products">
+            <img src="{{product.image}}" alt="" width="100px" height="100px">
+
+            <div class="rating">
+                <span>{{product.rating.rate}}</span>
+            </div>
+
+            <h5>{{product.title}}</h5>
+            <h6>{{product.catageory}}</h6>
+
+            <label for="">{{product.price}}</label>
+            
+        </div>
+    </div>
+</div>

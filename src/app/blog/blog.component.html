@@ -1,0 +1,39 @@
+<div class="parent">
+    <div class="card" *ngFor="let blog of blogs">
+
+
+        <div class="card-body">
+
+            <div>
+                <label for="">
+                    <h2>{{blog.title}}</h2>
+                </label>
+            </div>
+    
+            <div>
+                <span class="author">{{blog.author}}</span>
+                    |   <span>{{blog.date_published}}</span>
+                
+    
+               
+                
+    
+            </div>
+    
+            <div>
+                <p>{{blog.content}}</p>
+            </div>
+    
+
+        </div>
+        
+
+        
+        
+
+
+
+
+
+    </div>
+</div>

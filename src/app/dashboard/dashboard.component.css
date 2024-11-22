@@ -1,0 +1,55 @@
+.parent{
+    width: 100vw;
+    height: 100vh;
+    background-color:grey;
+    display: flex;
+
+}
+
+.left{
+    width: 20%;
+    height: 100%;
+    background-color: darkcyan;
+    overflow:scroll;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    
+}
+
+h3{
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    
+
+}
+h3:hover{
+    color: black;
+    
+}
+
+
+
+.logout{
+    background-color: red;
+    position: relative;
+    left: 99px;
+    top: 20px;
+    border: none;
+    color: white;
+}
+
+.logout:hover{
+    background-color: black;
+}
+
+.right{
+    width: 80%;
+    height: 100%;
+    overflow: auto;
+
+}
+

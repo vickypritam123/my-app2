@@ -1,0 +1,38 @@
+<div class="parent">
+    <div class="child">
+        <form [formGroup]="accountForm">
+           
+           
+            <label for="">account name</label>
+            <input type="text" formControlName="account_name">
+            <br>
+
+            <label for="">available balance</label>
+            <input type="number" formControlName="available_balance">
+            <br>
+
+            <label for="">account number</label>
+            <input type="number" formControlName="account_number">
+            <br>
+
+            <label for="">city</label>
+            <input type="text" formControlName="city">
+            <br>
+
+            <label for="">profie picture</label>
+            <input type="text" formControlName="profie_picture">
+            <br>
+
+            <button (click)="submit()" class="btn btn-danger">submit</button>
+
+
+            
+
+
+        </form>
+
+       
+
+
+    </div>
+</div>

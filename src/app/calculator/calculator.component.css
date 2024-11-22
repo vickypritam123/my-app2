@@ -1,0 +1,89 @@
+.parent{
+    width: 100vw;
+    height: 100vh;
+    background-color: azure;
+    padding: 10px;
+}
+
+
+.child{
+
+    width: 30%;
+    height: 50%;
+    background-color: rgb(182, 219, 220);
+    margin: 140px;
+    position: relative;
+    left: 150px;
+    box-shadow: 0px 0px 20px black;   
+    
+}
+
+h1{
+    text-align: center;
+}
+
+.num1{
+    
+}
+
+.box1{
+
+    width: 80%;
+    border: none;
+    position: relative;
+    left: 10px;
+}
+
+.box2{
+    width: 80%;
+    border: none;
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+
+.num2{
+    position: relative;
+    top: 10px;
+}
+
+.sum{
+    position: relative;
+    top: 20px;
+    left: 130px;
+    width: 80px;
+    background-color: rgb(142, 181, 181);
+
+}
+
+.sub{
+    position: relative;
+    top: 20px;
+    width: 80px;
+    left: -30px;
+    background-color: rgb(142, 181, 181);
+}
+
+.mul{
+
+    position: relative;
+    top: 20px;
+    left: 50px;
+    width: 80px;
+    background-color: rgb(142, 181, 181);
+}
+
+.div{
+    position: relative;
+    top: 20px;
+    left: 50px;
+    width: 80px;
+    background-color: rgb(142, 181, 181);
+}
+
+h3{
+
+    position: relative;
+
+    top: 50px;
+}

@@ -1,0 +1,63 @@
+<div class="parent">
+    <div class="child1">
+        <label> search</label>
+        <input type="text" placeholder="search" [(ngModel)]="term" (keyup)="filter()">
+
+        <select [(ngModel)]="column">
+
+            <option>name</option>
+            <option>city</option>
+        </select>
+
+        <select [(ngModel)]="order">
+            <option>asc</option>
+            <option >desc</option>
+        </select>
+
+        <button (click)="sort()">sort</button>
+
+
+    </div>
+    <hr>
+    <div class="child2" *ngFor="let student of students">
+        <div class="top">
+           <h5>{{student.school_name}}</h5>
+
+           <img src="{{student.school_logo}}" width="50px" height="50px">
+
+           <div class="mid">
+            <label >NAME: {{student.name}}</label>
+            <br>
+            <label >PHONE: {{student.phone}}</label>
+            <br>
+            <label >DOB: {{student.dob}}</label>
+            <br>
+            <label >CITY: {{student.city}}</label>
+            <br>
+            <label >EMAIL: {{student.email}}</label>
+
+           </div>
+
+           <div class="bot">
+
+            <label > school city: {{student.school_city}}</label>
+
+            <label class="schoolpin">school pin: {{student.school_pin}}</label>
+            <br>
+
+            <button class="view">View</button>
+            <button class="exit">Exit</button>
+            <button (click)="delete(student.id)" class="delete">Delete</button>
+
+
+
+
+           </div>
+
+        
+
+        </div>
+        
+       
+    </div>
+</div>

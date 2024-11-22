@@ -1,0 +1,53 @@
+<div class="parent">
+    <h1>pokemon carousel</h1>
+
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+    <div class="child" *ngFor="let pokemon of pokemons">
+
+        
+        <h3>
+            <img src="{{pokemon.image_url}}" alt="">
+        </h3>
+
+        <h3>{{pokemon.pokemon}}</h3>
+
+        <h6><span>
+            Type:
+        </span>{{pokemon.type}}</h6>
+
+        <h6><span>
+            Abilities:
+        </span>{{pokemon.abilities}}</h6>
+
+        <h6><span>
+            Hitpoints:
+        </span>{{pokemon.hitpoints}}</h6>
+
+        <h6><span>
+            Evoluations:
+        </span>{{pokemon.evolutions}}</h6>
+
+        <h6><span>
+            Location:
+        </span>{{pokemon.location}}</h6>
+
+        
+
+
+        
+
+       
+
+
+
+
+        
+    </div>
+</div>

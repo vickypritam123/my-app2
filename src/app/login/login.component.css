@@ -1,0 +1,73 @@
+.parent{
+    width: 100vw;
+    height: 100vh;
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child{
+     
+    width: 30%;
+    height: 50%;
+    background-color: teal;
+    
+
+}
+
+.box1{
+
+    position: relative;
+    left: 50px;
+    top: 40px;
+}
+
+.box2{
+
+    position: relative;
+    top: 80px;
+    left: 20px;
+}
+
+.password{
+    position: relative;
+    top: 80px;
+    left: 10px;
+}
+
+.mail{
+    position: relative;
+    top: 40px;
+    left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.log{
+
+    position: relative;
+    top: 100px;
+    left: 150px;
+    background-color: azure;
+    border: none;
+    cursor: pointer;
+
+
+}
+
+.log:hover{
+    background-color: black;
+    color: white;
+}
+ 
+
+

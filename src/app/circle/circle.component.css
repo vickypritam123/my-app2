@@ -1,0 +1,55 @@
+.parent{
+    width: 100vw;
+    height: 100vh;
+    background-color: azure;
+
+    padding: 20px;
+}
+
+.child{
+    width: 30%;
+    height: 50%;
+    background-color: rgb(182, 219, 220);
+    margin: 140px;
+    position: relative;
+    left: 150px;
+    box-shadow: 0px 0px 20px black;  
+    border-radius: 60%;
+}
+
+h1{
+    text-align: center;
+}
+
+.radius{
+    position: relative;
+    
+    left: 165px;
+}
+.box1{
+
+    width: 80%;
+    position: relative;
+    left: 35px;
+    border: none;
+}
+
+h3{
+    position: relative;
+    top: 30px;
+    left: 20px;
+}
+
+.area{
+    position: relative;
+    top: 35px;
+    left: 140px;
+    background-color: rgb(142, 181, 181);
+}
+
+.peri{
+    position: relative;
+    top: 35px;
+    left: 150px;
+    background-color: rgb(142, 181, 181);
+}

@@ -35,6 +35,13 @@ import { CreateAccountComponent } from './create-account/create-account.componen
 import { StudentComponent } from './student/student.component';
 import { SreateStudentComponent } from './sreate-student/sreate-student.component';
 import { CreateStudentComponent } from './create-student/create-student.component';
+import { ProfileComponent } from './profile/profile.component';
+import { AngularComponent } from './angular/angular.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import {MatBadgeModule} from '@angular/material/badge';
+import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
+import { CreateaccountComponent } from './createaccount/createaccount.component';
 
 @NgModule({
   declarations: [
@@ -68,14 +75,21 @@ import { CreateStudentComponent } from './create-student/create-student.componen
     CreateAccountComponent,
     StudentComponent,
     SreateStudentComponent,
-    CreateStudentComponent
+    CreateStudentComponent,
+    ProfileComponent,
+    AngularComponent,
+    CreateaccountComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatSlideToggleModule,
+    MatBadgeModule,
+    MatBottomSheetModule
   ],
   providers: [],
   bootstrap: [AppComponent]

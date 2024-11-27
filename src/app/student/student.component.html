@@ -1,63 +1,84 @@
 <div class="parent">
-    <div class="child1">
-        <label> search</label>
-        <input type="text" placeholder="search" [(ngModel)]="term" (keyup)="filter()">
+    <div class="chi1">
+        <div class="one">
 
-        <select [(ngModel)]="column">
-
-            <option>name</option>
-            <option>city</option>
-        </select>
-
-        <select [(ngModel)]="order">
-            <option>asc</option>
-            <option >desc</option>
-        </select>
-
-        <button (click)="sort()">sort</button>
-
-
-    </div>
-    <hr>
-    <div class="child2" *ngFor="let student of students">
-        <div class="top">
-           <h5>{{student.school_name}}</h5>
-
-           <img src="{{student.school_logo}}" width="50px" height="50px">
-
-           <div class="mid">
-            <label >NAME: {{student.name}}</label>
-            <br>
-            <label >PHONE: {{student.phone}}</label>
-            <br>
-            <label >DOB: {{student.dob}}</label>
-            <br>
-            <label >CITY: {{student.city}}</label>
-            <br>
-            <label >EMAIL: {{student.email}}</label>
-
-           </div>
-
-           <div class="bot">
-
-            <label > school city: {{student.school_city}}</label>
-
-            <label class="schoolpin">school pin: {{student.school_pin}}</label>
-            <br>
-
-            <button class="view">View</button>
-            <button class="exit">Exit</button>
-            <button (click)="delete(student.id)" class="delete">Delete</button>
-
-
-
-
-           </div>
-
-        
+            <h4>
+                hi
+            </h4>
 
         </div>
-        
-       
+
+        <div class="two">
+            <input type="text" placeholder="search student" [(ngModel)]="term" (keyup)="filter()">
+
+            <select [(ngModel)]="column">
+                <option>name</option>
+                <option>city</option>
+                <option>school name</option>
+                <option>school city</option>
+            </select>
+
+            <select [(ngModel)]="order">
+                <option>asc</option>
+                <option >desc</option>
+
+            </select>
+
+            <button (click)="sort()">sort</button>
+
+
+        </div>
+
+        <div class="three">
+
+           
+        </div>
     </div>
+    <div class="child" *ngFor="let student of students">
+        <div class="top">
+            <img src="{{student.school_logo}}" width="70px" height="50px">
+            <label >{{student.school_name}}</label>
+        </div>
+       
+        <div class="middle">
+
+            <span>NAME: {{student.name}}</span>
+            <br>
+
+            <span>PHONE: {{student.phone}}</span>
+           
+            <br>
+
+            <span>DOB: {{student.dob}}</span>
+            <br>
+
+            <span>CITY: {{student.city}}</span>
+            <br>
+            <span>EMAIL: {{student.email}}</span>
+            <br>
+
+            <img class="image" src="{{student.profile_picture}} " width="100px" height="80px" >
+
+
+        </div>
+        <div class="bottom">
+           
+            <div class="b1">
+                <h6>SCHOOL CITY: {{student.school_city}}</h6>
+            <h6>SCHOOL PIN:{{student.school_pin}}</h6>
+            </div>
+
+            <div class="bt" >
+                <button class="btn btn-info">View</button>
+            <button class="btn btn-secondary">Exit</button>
+            <button (click)="delete(student.id)"  class="btn btn-danger" >Delete</button>
+            </div>
+
+
+            
+
+        </div>
+    </div>
+
+
 </div>

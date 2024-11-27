@@ -1,22 +1,19 @@
 
 <div class="parent">
-    <div class="child">
-        <label class="mail" for="">email</label>
-        <input class="box1" type="email">
-        <br>
+   <form [formGroup]="loginForm">
+    <label class="mail" for="">email</label>
+    <input class="box1" type="email" formControlName="email">
+    <br>
 
-        <label class="password" for="">password</label>
-        <input class="box2" type="password">
+    <label class="password" for="">password</label>
+    <input class="box2" type="password" formControlName="password">
 
-        <br>
-
-
-
-        <button class="log" routerLink="/dashboard">login</button>
+    <br>
 
 
 
-    </div>
+    <button (click)="login()">login</button>
+   </form>
 </div>
 
 

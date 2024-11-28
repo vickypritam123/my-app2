@@ -30,11 +30,12 @@ import { CreateStudentComponent } from './create-student/create-student.componen
 import { ProfileComponent } from './profile/profile.component';
 import { AngularComponent } from './angular/angular.component';
 import { CreateaccountComponent } from './createaccount/createaccount.component';
+import { AuthenticationGuard } from './authentication.guard';
 
 const routes: Routes = [ 
   {path:'',component:LoginComponent},
   {path:'login',component:LoginComponent},
-  {path:'dashboard',component:DashboardComponent,children:[
+  {path:'dashboard',canActivate:[AuthenticationGuard],component:DashboardComponent,children:[
     {path:'home',component:HomeComponent},
     {path:'welcome',component:WelcomeComponent},
     {path:'data-binding',component:DataBindingComponent},
